@@ -19,7 +19,39 @@
       <a href="login.html"><i class="fa fa-right-to-bracket"></i> Login</a>
       <a href="register.html"><i class="fa fa-fw fa-user"></i> Register</a>
     </nav>
+    <h3 class="contact-header">Send me a message...</h3>
   </header>
+
+  <main class="contact-page">
+    <form action="mailto:aworetanjeremiah@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+      <label for="name">Name</label><br>
+      <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="off"><br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="Your email" required  autocomplete="off"><br>
+      <label for="message">Message</label><br>
+      <textarea name="message" class="message" rows="10" placeholder="Your message..." minlength="2"
+        required></textarea><br>
+      <button type="submit" class="submit-btn"><i class="fa fa-paper-plane"></i> Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <section class="contact-section">
+      <p>Jeremy &copy; 2022</p>
+      <div class="contact-links">
+        <a href="https://facebook.com/jeremiah.aworetan.1" target="_blank" class="contact-details"><i
+            class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="https://github.com/jeremiey" target="_blank" class="contact-details"><i class="fab fa-github"></i>
+          GitHub</a>
+        <a href="https://twitter.com/stjerey" target="_blank" class="contact-details"><i class="fab fa-twitter"></i>
+          Twitter</a>
+        <a href="https://linkedin.com/in/jeremiah-aworetan" target="_blank" class="contact-details"><i
+            class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="mailto:aworetanjeremiah@gmail.com" target="_blank" class="contact-details"><i class="fa fa-envelope"></i>
+          Mail</a>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>

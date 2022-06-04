@@ -73,16 +73,32 @@ ol {
   margin-left: 2em;
 }
 
+input {
+  width: 30em;
+  padding: 1em;
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+  border: 5px solid var(--footer-blue);
+  border-radius: 10px;
+  outline: none;
+  color: var(--main-white);
+  background-color: var(--nav-blue);
+}
+
+input:focus {
+  border: 5px solid var(--nav-blue);
+  background-color: var(--footer-blue);
+}
 
 /* nav bar */
 .topnav {
   overflow: hidden;
   background-color: var(--nav-blue);
-  color: white;
+  color: var(--main-white);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -126,9 +142,8 @@ ol {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
-  max-height: 100vh;
-  background-color: #000;
+  height: 92vh;
+  background-color: var(--nav-blue);
   background: linear-gradient(rgba(10, 10, 35, 0.75), rgba(10, 10, 35, 0.75)),
     url("https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
   background-size: cover;
@@ -296,5 +311,68 @@ ol {
 }
 
 .contact-btn:hover {
+  background-color: var(--footer-blue);
+}
+
+.contact-btn:active {
   transform: translateY(8px);
+  background-color: var(--footer-blue);
+}
+
+/* Contact Me page */
+.contact-page {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+.contact-header {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 3rem;
+}
+
+.message {
+  border-radius: 10px;
+  padding: 1em;
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+  width: 30em;
+  outline: none;
+  border: 5px solid var(--footer-blue);
+  color: var(--main-white);
+  background-color: var(--nav-blue);
+}
+
+.message:focus {
+  border: 5px solid var(--nav-blue);
+  background-color: var(--footer-blue);
+}
+
+.submit-btn {
+  width: 24em;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 5px solid var(--footer-blue);
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  box-shadow: 5px 10px 18px var(--nav-blue);
+  transition: transform 0.3s ease-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--footer-blue);
+}
+
+.submit-btn:active {
+  transform: translateY(8px);
+  background-color: var(--footer-blue);
 }
