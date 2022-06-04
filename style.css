@@ -258,22 +258,24 @@ input:focus {
   align-items: center;
 }
 
-/* Contact section */
-.contact-section {
+/* Footer */
+footer {
   text-align: center;
   background-color: var(--footer-blue);
   padding: 1em;
+  bottom: 0;
+  position: relative;
 }
 
-.contact-section>p {
+footer>p {
   margin-top: 1em;
 }
 
-.contact-section-header>p {
+footer-header>p {
   font-style: italic;
 }
 
-.contact-section>hr {
+footer>hr {
   border: .005rem solid var(--main-blue);
 }
 
