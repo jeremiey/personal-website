@@ -11,18 +11,18 @@
   <link rel="icon" href="favicon.png">
 </head>
 
-<body>
+<body id="contact-page-body">
   <header>
-    <nav class="topnav" id="myTopnav">
+    <nav class="topnav">
       <a href="index.html"><i class="fa fa-fw fa-home"></i> About Me</a>
-      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i> Contact</a>
       <a href="login.html"><i class="fa fa-right-to-bracket"></i> Login</a>
       <a href="register.html"><i class="fa fa-fw fa-user"></i> Register</a>
     </nav>
     <h3 class="contact-header">Send me a message...</h3>
   </header>
 
-  <main class="contact-page">
+  <main class="contact-page-container">
     <form action="mailto:aworetanjeremiah@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
       <label for="name">Name</label><br>
       <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="off"><br>
