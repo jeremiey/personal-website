@@ -17,9 +17,97 @@
       <a href="index.html"><i class="fa fa-fw fa-home"></i> About Me</a>
       <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
       <a href="login.html"><i class="fa fa-right-to-bracket"></i> Login</a>
-      <a href="register.html"><i class="fa fa-fw fa-user"></i> Register</a>
+      <a href="register.html" class="active"><i class="fa fa-fw fa-user"></i> Register</a>
     </nav>
   </header>
+
+  <main class="register-page-container">
+    <!--  It should have the below fields with HTML validation as well.
+First Name
+Last Name
+Phone
+Gender (dropdown)
+Country
+State/province
+Email
+password
+Confirm password -->
+    <form class="register-form">
+      <section class="login-header">
+        <h1 class="welcome">WELCOME</h1>
+        <h4 class="welcome-small">
+          Please enter your details to register
+        </h4>
+      </section>
+      <div class="img-container">
+        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+      <label for="first-name">First Name</label><br>
+      <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required
+        autocomplete="off"><br>
+      <label for="last-name">Last Name</label><br>
+      <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required
+        autocomplete="off"><br>
+      <label for='phone'>Phone Number</label><br />
+      <input type='number' id='phone' placeholder='Enter your phone number' /><br>
+      <label for="gender">Gender</label><br>
+      <select name="gender" id="gender">
+        <option value="" disabled selected>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="rather-not-say">Rather not say</option>
+      </select><br>
+      <label for='country'>Country</label><br />
+      <input type='country' id='country' placeholder='Enter your country' /><br>
+      <label for='state'>State/Province</label><br />
+      <input type='state' id='state' placeholder='Enter your state/province' /><br>
+      <label for='email'>Email</label><br />
+      <input type='email' id='email' placeholder='Enter your email' /><br>
+      <label for='password'>Password</label><br />
+      <input type='password' id='password' placeholder='**********' /><br />
+      <label for='confirm-password'>Confirm Password</label><br />
+      <input type='password' id='password' placeholder='**********' /><br />
+      <a href='#' class='forgot-password'>
+        Forgot password
+      </a>
+      <br />
+      <button type='submit' class='login-btn'>
+        <i class="fa fa-right-to-bracket sign-in-icon"></i> Sign Up;
+      </button>
+      <br />
+      <div class="divider-container">
+        <div class="divider"></div>
+        <div class="or">OR</div>
+        <div class="divider"></div>
+      </div>
+      <button type='submit' class='login-google'>
+        <i class="fa-brands fa-google"></i> Sign up with Google
+      </button>
+      <br>
+      <button type="submit" class="login-google">
+        <i class="fa-brands fa-github"></i> Sign up with GitHub
+      </button>
+    </form>
+  </main>
+
+  <footer>
+    <section class="contact-section">
+      <p>Jeremy &copy; 2022</p>
+      <div class="contact-links">
+        <a href="https://facebook.com/jeremiah.aworetan.1" target="_blank" class="contact-details"><i
+            class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="https://github.com/jeremiey" target="_blank" class="contact-details"><i class="fab fa-github"></i>
+          GitHub</a>
+        <a href="https://twitter.com/stjerey" target="_blank" class="contact-details"><i class="fab fa-twitter"></i>
+          Twitter</a>
+        <a href="https://linkedin.com/in/jeremiah-aworetan" target="_blank" class="contact-details"><i
+            class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="mailto:aworetanjeremiah@gmail.com" target="_blank" class="contact-details"><i
+            class="fa fa-envelope"></i>
+          Mail</a>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
