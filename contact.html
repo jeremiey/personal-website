@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
   <link rel="stylesheet" href="style.css">
   <title>Contact Me | Jeremy's Website</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,23 +15,26 @@
   <header>
     <nav class="topnav">
       <a href="index.html"><i class="fa fa-fw fa-home"></i> About Me</a>
-      <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
       <a href="login.html"><i class="fa fa-right-to-bracket"></i> Login</a>
       <a href="register.html"><i class="fa fa-fw fa-user"></i> Register</a>
     </nav>
-    <h3 class="contact-header">Send me a message...</h3>
   </header>
 
   <main class="contact-page-container">
+    <h3 class="contact-header">Send me a message...</h3>
     <form action="mailto:aworetanjeremiah@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
       <label for="name">Name</label><br>
-      <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="off"><br>
+      <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="off"
+        class="contact-input"><br>
       <label for="email">Email</label><br>
-      <input type="email" name="email" id="email" placeholder="Your email" required  autocomplete="off"><br>
+      <input type="email" name="email" id="email" placeholder="Your email" required autocomplete="off"
+        class="contact-input"><br>
       <label for="message">Message</label><br>
       <textarea name="message" class="message" rows="10" placeholder="Your message..." minlength="2"
         required></textarea><br>
-      <button type="submit" class="submit-btn"><i class="fa fa-paper-plane"></i> Send Message</button>
+      <div class="buttons-center"><button type="submit" class="submit-btn"><i class="fa fa-paper-plane"></i> Send
+          Message</button></div>
     </form>
   </main>
 
@@ -47,7 +50,8 @@
           Twitter</a>
         <a href="https://linkedin.com/in/jeremiah-aworetan" target="_blank" class="contact-details"><i
             class="fab fa-linkedin"></i> Linkedin</a>
-        <a href="mailto:aworetanjeremiah@gmail.com" target="_blank" class="contact-details"><i class="fa fa-envelope"></i>
+        <a href="mailto:aworetanjeremiah@gmail.com" target="_blank" class="contact-details"><i
+            class="fa fa-envelope"></i>
           Mail</a>
       </div>
     </section>
