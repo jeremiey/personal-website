@@ -29,6 +29,9 @@ body {
   background-color: var(--main-blue);
   user-select: none;
   height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -71,10 +74,13 @@ select:focus {
   background-color: var(--footer-blue);
 }
 
+footer {
+  margin-top: auto;
+}
+
 .buttons-center {
   text-align: center;
 }
-
 
 /* nav bar */
 .topnav {
