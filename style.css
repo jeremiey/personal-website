@@ -21,7 +21,6 @@ html {
 }
 
 /* Base styles */
-
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
@@ -87,7 +86,6 @@ main {
 }
 
 /* Footer */
-
 footer {
   text-align: center;
   background-color: var(--footer-blue);
@@ -163,6 +161,7 @@ footer>hr {
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0.5rem 2rem;
 }
 
 .topnav a {
