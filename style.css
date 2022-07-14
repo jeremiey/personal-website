@@ -264,7 +264,7 @@ footer>hr {
 
 .scroll {
   position: absolute;
-  bottom: 0;
+  bottom: 24px;
   color: var(--main-red);
   cursor: pointer;
   text-align: center;
