@@ -9,7 +9,6 @@
 }
 
 /* Base reset */
-
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +32,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+}
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
 }
 
 h1,
@@ -156,12 +160,11 @@ footer>hr {
   color: var(--main-white);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5rem 2rem;
 }
 
 .topnav a {
@@ -218,7 +221,7 @@ footer>hr {
   width: 0;
   white-space: nowrap;
   animation:
-    typing 1s steps(20, end) forwards,
+    typing 5s steps(20, end) forwards,
     blink .8s infinite;
 }
 
