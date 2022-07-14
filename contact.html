@@ -21,18 +21,22 @@
 
   <main class="contact-page-container">
     <h3 class="contact-header">Send me a message...</h3>
-    <form action="mailto:aworetanjeremiah@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+    <form action="https://formsubmit.co/aworetanjeremiah@gmail.com" method="POST">
       <label for="name">Name</label><br>
-      <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="off"
+      <input type="text" name="name" id="name" placeholder="Your name" required
         class="contact-input"><br>
       <label for="email">Email</label><br>
-      <input type="email" name="email" id="email" placeholder="Your email" required autocomplete="off"
+      <input type="email" name="email" id="email" placeholder="Your email" required
         class="contact-input"><br>
       <label for="message">Message</label><br>
       <textarea name="message" class="message" rows="10" placeholder="Your message..." minlength="2"
         required></textarea><br>
       <div class="buttons-center"><button type="submit" class="submit-btn"><i class="fa fa-paper-plane"></i> Send
           Message</button></div>
+      <input type="hidden" name="_next" value="https://jeremiey.github.io/personal-website">
+      <input type="hidden" name="_subject" value="Someone's trying to contact you!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
     </form>
   </main>
 
