@@ -352,6 +352,7 @@ footer>hr {
   border: 5px solid var(--footer-blue);
   color: var(--main-white);
   background-color: var(--nav-blue);
+  resize: vertical;
 }
 
 .message:focus {
@@ -397,73 +398,4 @@ footer>hr {
 .login-github:active {
   transform: translateY(8px);
   background-color: var(--main-blue);
-}
-
-/* Login Page */
-.login-page-container,
-.register-page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3em;
-  margin-top: 3em;
-}
-
-.login-header {
-  text-align: center;
-}
-
-.login-header>h1 {
-  font-size: 4rem;
-}
-
-.sign-in-icon {
-  margin-right: 1rem;
-}
-
-.img-container {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 25rem;
-  height: 25rem;
-  border-radius: 50%;
-}
-
-.forgot-password {
-  font-size: 1.5rem;
-  color: #be3144;
-}
-
-.fa-google {
-  margin-right: 1rem;
-}
-
-.divider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.divider {
-  display: inline-block;
-  border-bottom: white 1px solid;
-  width: 50%;
-}
-
-.or {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.login-github {
-  background-color: #57606a;
-}
-
-.need-account {
-  color: var(--main-red);
 }
