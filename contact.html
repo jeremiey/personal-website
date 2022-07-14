@@ -1,63 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Me | Jeremy's Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" href="favicon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
-  <link rel="stylesheet" href="style.css">
-  <title>Contact Me | Jeremy's Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="icon" href="favicon.png">
-</head>
+  <body>
+    <header>
+      <nav class="topnav">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> About Me</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="topnav">
-      <a href="index.html"><i class="fa fa-fw fa-home"></i> About Me</a>
-      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-    </nav>
-  </header>
+    <main class="contact-page-container">
+      <h3 class="contact-header">Send me a message...</h3>
+      <form
+        action="https://formsubmit.co/5ad6e90d1d6c9847586699d8ecf9fee2"
+        method="POST"
+      >
+        <label for="name">Name</label><br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          required
+          class="contact-input"
+        /><br />
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email"
+          required
+          class="contact-input"
+        /><br />
+        <label for="message">Message</label><br />
+        <textarea
+          name="message"
+          class="message"
+          rows="10"
+          placeholder="Your message..."
+          minlength="2"
+          required
+        ></textarea
+        ><br />
+        <div class="buttons-center">
+          <button type="submit" class="submit-btn">
+            <i class="fa fa-paper-plane"></i> Send Message
+          </button>
+        </div>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://jeremiey.github.io/personal-website"
+        />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Someone's trying to contact you!"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+      </form>
+    </main>
 
-  <main class="contact-page-container">
-    <h3 class="contact-header">Send me a message...</h3>
-    <form action="https://formsubmit.co/aworetanjeremiah@gmail.com" method="POST">
-      <label for="name">Name</label><br>
-      <input type="text" name="name" id="name" placeholder="Your name" required
-        class="contact-input"><br>
-      <label for="email">Email</label><br>
-      <input type="email" name="email" id="email" placeholder="Your email" required
-        class="contact-input"><br>
-      <label for="message">Message</label><br>
-      <textarea name="message" class="message" rows="10" placeholder="Your message..." minlength="2"
-        required></textarea><br>
-      <div class="buttons-center"><button type="submit" class="submit-btn"><i class="fa fa-paper-plane"></i> Send
-          Message</button></div>
-      <input type="hidden" name="_next" value="https://jeremiey.github.io/personal-website">
-      <input type="hidden" name="_subject" value="Someone's trying to contact you!">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-    </form>
-  </main>
-
-  <footer>
-    <section class="contact-section">
-      <p>Jeremy &copy; 2022</p>
-      <div class="contact-links">
-        <a href="https://facebook.com/jeremiah.aworetan.1" target="_blank" class="contact-details"><i
-            class="fab fa-facebook-square"></i> Facebook</a>
-        <a href="https://github.com/jeremiey" target="_blank" class="contact-details"><i class="fab fa-github"></i>
-          GitHub</a>
-        <a href="https://twitter.com/stjerey" target="_blank" class="contact-details"><i class="fab fa-twitter"></i>
-          Twitter</a>
-        <a href="https://linkedin.com/in/jeremiah-aworetan" target="_blank" class="contact-details"><i
-            class="fab fa-linkedin"></i> Linkedin</a>
-        <a href="mailto:aworetanjeremiah@gmail.com" target="_blank" class="contact-details"><i
-            class="fa fa-envelope"></i>
-          Mail</a>
-      </div>
-    </section>
-  </footer>
-</body>
-
+    <footer>
+      <section class="contact-section">
+        <p>Jeremy &copy; 2022</p>
+        <div class="contact-links">
+          <a
+            href="https://facebook.com/jeremiah.aworetan.1"
+            target="_blank"
+            class="contact-details"
+            ><i class="fab fa-facebook-square"></i> Facebook</a
+          >
+          <a
+            href="https://github.com/jeremiey"
+            target="_blank"
+            class="contact-details"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+          <a
+            href="https://twitter.com/stjerey"
+            target="_blank"
+            class="contact-details"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+          <a
+            href="https://linkedin.com/in/jeremiah-aworetan"
+            target="_blank"
+            class="contact-details"
+            ><i class="fab fa-linkedin"></i> Linkedin</a
+          >
+          <a
+            href="mailto:aworetanjeremiah@gmail.com"
+            target="_blank"
+            class="contact-details"
+            ><i class="fa fa-envelope"></i> Mail</a
+          >
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
