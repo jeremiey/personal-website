@@ -297,7 +297,7 @@ footer>hr {
 
 .my-photo {
   display: block;
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   border-radius: 50%;
   border: .01rem solid var(--main-blue);

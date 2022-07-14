@@ -1,75 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Jeremy's Website</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <title>Jeremy's Website</title>
-</head>
+  <body>
+    <header>
+      <nav class="topnav">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> About Me</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="topnav">
-      <a href="index.html"><i class="fa fa-fw fa-home"></i> About Me</a>
-      <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="welcome-section">
-      <img class="wave" src="https://raw.githubusercontent.com/Kathryn-Jie/Kathryn-Jie/main/wave.gif" alt="hand-waving">
-      <div class="greeting-container">
-        <h1 class="typed-out">Hey, I am Jeremy </h1>
-      </div>
-      <p class="web-dev">a web developer</p>
-      <p class="scroll">Scroll for more details<br><i class="fa-solid fa-angle-down"></i></p>
-    </section>
-
-    <section class="details-section">
-      <h2 class="details-header">Some Details about Myself</h2>
-      <div class="my-details">
-        <div>
-          <h2 class="about">About me</h2>
-          <p>
-            I'm Jeremy, a Front End Web Developer. <br>
-            I'm proficient in using HTML, CSS, JavaScript for Development. I also use ReactJS and Bootstrap for development. <br>
-            I also do some backend with the MERN Stack.<br>
-          </p>
+    <main>
+      <section class="welcome-section">
+        <img
+          class="wave"
+          src="https://raw.githubusercontent.com/Kathryn-Jie/Kathryn-Jie/main/wave.gif"
+          alt="hand-waving"
+        />
+        <div class="greeting-container">
+          <h1 class="typed-out">Hey, I am Jeremy</h1>
         </div>
-        <img class="my-photo"
-          src="https://lh3.googleusercontent.com/a-/AOh14GjuFvjoobWgyf2FXaV7lKJniW-6CxBHQfrED-1dww=s288-p-rw-no"
-          alt="photo of myself">
+        <p class="web-dev">a web developer</p>
+        <p class="scroll">
+          Scroll for more details<br /><i class="fa-solid fa-angle-down"></i>
+        </p>
+      </section>
+
+      <section class="details-section">
+        <h2 class="details-header">Some Details about Myself</h2>
+        <div class="my-details">
+          <div>
+            <h2 class="about">About me</h2>
+            <p>
+              I'm Jeremy, a Front End Web Developer. <br />
+              I'm proficient in using <code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, <code>ReactJS</code> and
+              <code>Bootstrap</code> for Development. <br />
+              I also do some backend with the <code>MERN Stack.</code><br />
+            </p>
+          </div>
+          <img
+            class="my-photo"
+            src="Jeremy.jpeg"
+            alt="photo of myself"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="contact-section-header">
-      <h2>Let's work together...</h2>
-      <p>How do you take your coffee?</p>
-    </div>
-    <a href="contact.html" class="contact-btn">
-      <i class="fa fa-envelopes-bulk"></i> Contact Me
-    </a>
-    <hr>
-    <p>Jeremy &copy; 2022</p>
-    <div class="contact-links">
-      <a href="https://facebook.com/jeremiah.aworetan.1" target="_blank" class="contact-details"><i
-          class="fab fa-facebook-square"></i> Facebook</a>
-      <a href="https://github.com/jeremiey" target="_blank" class="contact-details"><i class="fab fa-github"></i>
-        GitHub</a>
-      <a href="https://twitter.com/stjerey" target="_blank" class="contact-details"><i class="fab fa-twitter"></i>
-        Twitter</a>
-      <a href="https://linkedin.com/in/jeremiah-aworetan" target="_blank" class="contact-details"><i
-          class="fab fa-linkedin"></i> Linkedin</a>
-      <a href="mailto:aworetanjeremiah@gmail.com" target="_blank" class="contact-details"><i class="fa fa-envelope"></i>
-        Mail</a>
-    </div>
-  </footer>
-</body>
-
+      <a href="contact.html" class="contact-btn">
+        <i class="fa fa-envelopes-bulk"></i> Contact Me
+      </a>
+      <hr />
+      <p>Jeremy &copy; 2022</p>
+      <div class="contact-links">
+        <a
+          href="https://facebook.com/jeremiah.aworetan.1"
+          target="_blank"
+          class="contact-details"
+          ><i class="fab fa-facebook-square"></i> Facebook</a
+        >
+        <a
+          href="https://github.com/jeremiey"
+          target="_blank"
+          class="contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://twitter.com/stjerey"
+          target="_blank"
+          class="contact-details"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a
+          href="https://linkedin.com/in/jeremiah-aworetan"
+          target="_blank"
+          class="contact-details"
+          ><i class="fab fa-linkedin"></i> Linkedin</a
+        >
+        <a
+          href="mailto:aworetanjeremiah@gmail.com"
+          target="_blank"
+          class="contact-details"
+          ><i class="fa fa-envelope"></i> Mail</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
